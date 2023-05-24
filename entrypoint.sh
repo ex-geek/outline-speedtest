@@ -13,4 +13,4 @@ ip addr add 10.0.85.2/24 dev outline-tap0
 ip route add default via 10.0.85.1 onlink dev outline-tap0 metric 0
 ./tun2socks -tunName outline-tap0 -proxyHost $OUTLINE_IP -proxyPort $OUTLINE_PORT -proxyPassword $OUTLINE_PASS -proxyCipher $OUTLINE_CIPHER -proxyPrefix $OUTLINE_PREFIX -dnsFallback -logLevel debug &
 echo "-----------SPEEDTEST WITH OUTLINE - GERMANY (RETN)-----------"
-speedtest -s 31120 -f json
+speedtest -s 31120 -f jsonl
