@@ -1,5 +1,6 @@
 #!/bin/bash
 
+tunctl -t outline-tap0
 echo "-----------SPEEDTEST WITHOUT OUTLINE - IRAN (PISHGAMAN)-----------"
 echo "yes" | speedtest -s 32500 -f json
 echo "-----------SPEEDTEST WITHOUT OUTLINE - GERMANY (RETN)-----------"
