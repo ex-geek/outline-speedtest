@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-RUN apt-get update && apt-get install -y curl wget unzip uml-utilities
+RUN apt-get update && apt-get install -y iproute2 curl wget unzip uml-utilities
 RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | bash
 RUN apt-get install -y speedtest
 RUN wget -q https://github.com/Jigsaw-Code/outline-go-tun2socks/releases/download/v3.2.0/linux.zip
